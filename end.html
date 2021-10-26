@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinalQuiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <div id="end" class="flex-center flex-column">
+            <h1 id="finalScore"></h1>
+            <form class="end-form-container">
+                <h2 id="end-text">Ingresa tu Nombre</h2>
+                <input type="text" name='name' id="username"
+                    placeholder="Tu Nombre">
+                <button class="btn" id="savaScoreBtn" type="submit" onclick="saveHighScore(e)" disable>
+                    Guardar
+                </button>
+            </form>
+            <a href="/game.html" class="btn">Empezar de Nuevo?</a>
+            <a href="/" class="btn">Ir a Inicio <i class='bx bx-home'></i></a>
+        </div>
+    </div>
+</body>
+</html>

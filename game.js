@@ -45,7 +45,7 @@ let questions = [
   },
 ];
 
-const SCORE_POINTS = 100;
+const SCORE_POINTS = 10;
 const MAX_QUESTIONS = 4;
 
 startGame = () => {
@@ -59,7 +59,7 @@ getNewQuestion = () => {
   if (availableQuestion.length === 0 || questionCounter > MAX_QUESTIONS) {
     localStorage.setItem("mostRecentScore", score);
 
-    return window.location.assign("/end.html");
+    // return window.location.assign("/end.html");
   }
 
   questionCounter++;

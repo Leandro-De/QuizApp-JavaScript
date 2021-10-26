@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TeoriaDecicionesQuiz</title>
+    <title>Puntajes</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="highScores.css">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-
 </head>
 <body>
     <div class="container">
-        <div id="home" class="flex-column flex-center">
-            <h1>Quiz Teoria de Decisiones</h1>
-            <a href="/game.html" class="btn">Empezar<i class='bx bx-play' ></i></a>
-            <!-- <a href="/highscores.html" id="highscores-btn" class="btn" >Mejor Puntaje<i class='bx bx-crown' ></i></a> -->
+        <div id="highScores" class="flex-center flex-column">
+            <h1 id="finalScore">Tablero</h1>
+            <ul id="highScoresList"></ul>
+            <a href="/" class="btn">Ir a Inicio <i class='bx bx-home'></i></a>
         </div>
     </div>
+    <script src="highScores.js"></script>
 </body>
-</html> 
+</html>
